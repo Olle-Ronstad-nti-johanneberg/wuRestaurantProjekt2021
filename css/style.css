@@ -1,0 +1,65 @@
+#container {
+    width: 100vw;
+    height: 100vh;
+    background-color: darksalmon;
+    display: grid;
+    grid-template-areas: 
+    "Header"
+    "Main"
+    "Footer";
+    grid-template-rows: 0fr 1fr 0fr;
+    
+}
+
+body {
+    margin: 0px;
+}
+
+header {
+    grid-area: Header;
+    background-color: dimgrey;
+}
+
+footer {
+    grid-area: Footer;
+    background-color: dimgrey;
+}
+
+#main {
+    grid-area: Main;
+    display: grid;
+    background-image: url(./../misc/Blender/TestRenders/TestRender003.png);
+    background-position: center;
+
+    display: grid;
+    grid-template-areas: 
+    ". . ."
+    ". Micro ."
+    "Ram Cable Pie";
+    grid-template-rows: 33% 34% 33%;
+    grid-template-columns: 33% 34% 33%;
+}
+
+#MicroCrisps {
+    grid-area: Micro;
+}
+
+#RamDipLink {
+    grid-area: Ram;
+}
+
+#RaspberryPieLink {
+    grid-area: Pie;
+}
+
+#CablePastaLink {
+    grid-area: Cable;
+}
+
+.MainPageLinkBox {
+    margin: 15%;
+    background-color: lightslategray;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
