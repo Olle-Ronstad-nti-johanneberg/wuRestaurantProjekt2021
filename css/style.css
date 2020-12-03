@@ -28,7 +28,7 @@ footer {
 #main {
     grid-area: Main;
     display: grid;
-    background-image: url(./../misc/Blender/TestRenders/TestRender003.png);
+    background-image: url(./../misc/Blender/TestRenders/TestRender004.png);
     background-position: center;
 
     display: grid;
@@ -42,11 +42,16 @@ footer {
 
 #MicroCrisps {
     grid-area: Micro;
-    background-color:  rgba(111, 202, 193, 0.562);
+    background-color:  rgba(111, 202, 193, 0.911);
     border-radius: 20px;
     margin: 10%;
-    border-color: yellow;
-    border-width: 5;
+    border-style: solid;
+    border-color:rgb(226, 226, 101);
+    border-width: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #RamDipLink {
@@ -63,8 +68,12 @@ footer {
 
 .MainPageLinkBox {
     margin: 15%;
-    background-color: rgb(226, 226, 101);
+    background-color: rgba(226, 226, 101, 0.562);
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(216, 34, 104);
 }
