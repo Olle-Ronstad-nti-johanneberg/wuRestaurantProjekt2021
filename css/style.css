@@ -17,12 +17,12 @@ body {
 
 header {
     grid-area: Header;
-    background-color: dimgrey;
+    background-color: rgb(111, 202, 193);
 }
 
 footer {
     grid-area: Footer;
-    background-color: dimgrey;
+    background-color:  rgb(111, 202, 193);
 }
 
 #main {
@@ -42,6 +42,11 @@ footer {
 
 #MicroCrisps {
     grid-area: Micro;
+    background-color:  rgba(111, 202, 193, 0.562);
+    border-radius: 20px;
+    margin: 10%;
+    border-color: yellow;
+    border-width: 5;
 }
 
 #RamDipLink {
@@ -58,7 +63,7 @@ footer {
 
 .MainPageLinkBox {
     margin: 15%;
-    background-color: lightslategray;
+    background-color: rgb(226, 226, 101);
     display: flex;
     justify-content: center;
     border-radius: 10px;
