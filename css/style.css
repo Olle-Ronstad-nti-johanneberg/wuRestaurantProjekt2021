@@ -15,10 +15,40 @@ body {
     margin: 0px;
 }
 
+a {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3em;
+}
+
 header {
     grid-area: Header;
     background-color: rgb(111, 202, 193);
 }
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    margin:8px;
+
+}
+
+.NavBox {
+    display: flex;
+    background-color:  rgb(216, 34, 104);
+    border-radius: 4px;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    padding:4px;
+}
+
+
 
 footer {
     grid-area: Footer;
@@ -38,6 +68,18 @@ footer {
     "Ram Cable Pie";
     grid-template-rows: 33% 34% 33%;
     grid-template-columns: 33% 34% 33%;
+}
+#mainPcb {
+    grid-area: Main;
+    background-image: url(./../misc/tmp-img/tmp01.png);
+    background-position: center;
+}
+
+#orderPCB {
+    margin: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(216, 34, 104, 0.582);
 }
 
 #MicroCrisps {
