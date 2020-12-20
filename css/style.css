@@ -1,7 +1,6 @@
 #container {
     width: 100vw;
     height: 100vh;
-    background-color: darksalmon;
     display: grid;
     grid-template-areas: 
     "Header"
@@ -10,13 +9,32 @@
     grid-template-rows: 0fr 1fr 0fr;
     
 }
+#containerMenu {
+    width: 100vw;
+    height: min(100vh);
+    display: grid;
+    grid-template-areas: 
+    "Header"
+    "Main"
+    "Footer";
+    grid-template-rows: 60px 1fr 0fr;
+    
+}
 
 body {
     margin: 0px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 
 a {
     font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-decoration: none;
+    font-size: large;
 }
 
 h1 {
@@ -25,6 +43,8 @@ h1 {
 }
 
 header {
+    position: fixed;
+    width: 100vw;
     grid-area: Header;
     background-color: rgb(111, 202, 193);
 }
@@ -39,7 +59,7 @@ nav {
 
 .NavBox {
     display: flex;
-    background-color:  rgb(216, 34, 104);
+    background-color:  rgb(218, 71, 127);
     border-radius: 4px;
     width: 30%;
     justify-content: center;
@@ -53,14 +73,20 @@ nav {
 footer {
     grid-area: Footer;
     background-color:  rgb(111, 202, 193);
+    padding: 10px;
+}
+
+#backGround {
+    background-image: url(./../img/MainPage.png);
+    background-position: center;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
 }
 
 #main {
     grid-area: Main;
-    display: grid;
-    background-image: url(./../misc/Blender/TestRenders/TestRender004.png);
-    background-position: center;
-
     display: grid;
     grid-template-areas: 
     ". . ."
@@ -69,17 +95,17 @@ footer {
     grid-template-rows: 33% 34% 33%;
     grid-template-columns: 33% 34% 33%;
 }
-#mainPcb {
+#mainMenu {
     grid-area: Main;
-    background-image: url(./../misc/tmp-img/tmp01.png);
-    background-position: center;
+    display: flex;
+    flex-direction: column;
 }
 
-#orderPCB {
-    margin: 40px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: rgba(216, 34, 104, 0.582);
+#mainPcb {
+    grid-area: Main;
+    display: flex;
+    flex-direction: column;
+
 }
 
 #MicroCrisps {
@@ -118,4 +144,53 @@ footer {
     border-style: solid;
     border-width: 5px;
     border-color: rgb(216, 34, 104);
+}
+
+.FoodLink {
+    font-size: 1.5em;
+}
+
+.FoodMenuBlock {
+    padding: 10px;
+    margin: 40px 10%;
+    background-color: rgba(111, 202, 193,0.991);
+    border-radius: 10px;
+    border-style: solid;
+    border-color:rgb(226, 226, 101);
+    border-width: 5px;
+    flex-direction: row;
+    display: flex;
+}
+.insideFoodBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+img {
+    width: 10%;
+    margin: 10px;
+}
+
+#OrderPCBh1 {
+    padding: 10px;
+    margin: 40px 30%;
+    background-color: rgba(111, 202, 193,0.991);
+    border-radius: 10px;
+    border-style: solid;
+    border-color:rgb(226, 226, 101);
+    border-width: 5px;
+    text-align: center;
+}
+
+#OrderPCBText {
+    padding: 40px;
+    margin: 40px 5%;
+    background-color: rgba(111, 202, 193,0.991);
+    border-radius: 10px;
+    border-style: solid;
+    border-color:rgb(226, 226, 101);
+    border-width: 5px;
+    line-height: 1.5em;
+    
 }
